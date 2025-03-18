@@ -1,5 +1,5 @@
 # Kaggle_Titanic
-*list item
+* List item
 [Project description](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#project-description)
 [Statistical analysis](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#statistical-analysis)
 [Testing for optimal learning parameters](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#testing-for-optimal-learning-parameters)
