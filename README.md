@@ -1,10 +1,9 @@
 # Kaggle_Titanic
-* List item
-[Project description](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#project-description)
-[Statistical analysis](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#statistical-analysis)
-[Testing for optimal learning parameters](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#testing-for-optimal-learning-parameters)
-[Results](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#results)
-[Future improvements](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#future-improvements)
+* [Project description](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#project-description)
+* [Statistical analysis](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#statistical-analysis)
+* [Testing for optimal learning parameters](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#testing-for-optimal-learning-parameters)
+* [Results](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#results)
+* [Future improvements](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#future-improvements)
 
 ## Project description
 This repository is my solution to Kaggle's Titanic machine learning competition. Mostly this was done to practice the basic methods of machine learning and statistics I have learned.
