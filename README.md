@@ -54,5 +54,9 @@ Now that we have specified our features we will be building our model on, we wil
 From this we see that the maximum number of leaves we should have for this model is 50. 
 ## Results
 
+Using 50 as the maximum number of nodes, a feature list of ['Pclass','Age','Parch', 'Fare','Embarked','Sex'], and no random seed specified we generated from test.csv the file titanic_submission.csv. After uploading this to Kaggle we found that we had a 74% accuracy rate:
+![image](https://github.com/user-attachments/assets/793861b9-c4ec-4670-bb2b-571435151210)
+
 
 ## Future improvements
+The first place where we could improve our results is by using a more sofisticated machine learning tool. The statistical test we used was only for detecting linear relationships, so a model which incorporated more complex relationships between the columns would likely allow us to use the information in Cabin and SibSp to improve our accuracy. Finally it is possible that the Cabin information was encoded poorly and that we could improve on this by encoding the whole cabin and not just the grouping.
