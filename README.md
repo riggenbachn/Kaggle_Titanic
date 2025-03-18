@@ -10,7 +10,28 @@ This repository is my solution to Kaggle's Titanic machine learning competition.
 
 There are 6 files, 3 csv files and 3 python files. The csv files train.csv and test.csv are the data files given to us to train and test our model, respectively. The file titanic_submission.csv is the output of our machine learning model. The file titanic_statistics.py is the python code used to run the statistical test described in [Statistical analysis](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#statistical-analysis). Similarly, the file titanic_model_tester.py is the code used to test which learning parameters where best for this question as described in [Testing for optimal learning parameters](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#testing-for-optimal-learning-parameters). Finally, the file Titanic.py is the python code used to generate the titanic_submission.csv file and is described in [Results](https://github.com/riggenbachn/Kaggle_Titanic/blob/main/README.md#results).
 
+The machine learning tool we used was scikit-learn, specifically the DecisionTreeRegressor inside of sklearn.tree.
+
 ## Statistical analysis
+
+The columns of train.csv are, in order,
+
+* PassengerId
+* Survived
+* Pclass
+* Name
+* Sex
+* Age
+* SibSp
+* Parch
+* Ticket
+* Fare
+* Cabin
+* Embarked
+
+We can assume that the name and PassengerId are independent of Survived, which is the column we are trying to predict. We will therefore exclude these columns in our analysis and machine learning models. Further we will exclude the Ticket column since all the relevant information should also be contained in the Fare, Embarked, and Cabin columns. 
+
+Of the remaining columns, Embarked, Sex, and Cabin are the only columns which are not integer values. For the Embarked column we replaces 'C' with 0, 'Q' with 1, and 'S' with 2. Similarly for Sex we replaced 'male' with 0 and 'female' with 1. Finally, for Cabin, we made the assumption that which Cabin group the passenger was in was signifigantly more important for survival than the specific room number, and so we only encoded the Cabin as the unicode for the first character of their cabin. 
 
 ## Testing for optimal learning parameters
 
