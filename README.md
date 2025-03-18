@@ -37,7 +37,7 @@ As a first approach we split the train file into two peices using the test-train
 
 ![image](https://github.com/user-attachments/assets/e76d426c-5b51-4706-95ec-cc168f65e114)
 
-While this does not seem too bad for a first approximation, there is also room for improvement. One way to improve this, and the direction we decided to persue, is to remove the variables which were not corrolated with the Survived column. We did this by first computing the sample covariance of each column with the Survived column, and then computing the sample correlation. From this we then computed a t-score using the formula $$t=\mathrm{Cor}(X,\mathrm{Survived})\sqrt{\frac{n-2}{1-\mathrm{Cor}(X,\mathrm{Survived})}}$$ the results of which are recorded below.
+While this does not seem too bad for a first approximation, there is also room for improvement. One way to improve this, and the direction we decided to persue, is to remove the variables which were not corrolated with the Survived column. We did this by first computing the sample covariance of each column with the Survived column, and then computing the sample correlation. From this we then computed a t-score using the formula $t=\mathrm{Corr}(X,\mathrm{Survived})\sqrt{\frac{n-2}{1-\mathrm{Corr}(X,\mathrm{Survived})}}$ the results of which are recorded below.
 ![image](https://github.com/user-attachments/assets/3868c0bb-11ab-4367-aefe-9ac860110445)
 
 with a p-value of 0.05 we see that all the columns except SibSp and Cabin are corrolated with Survived and should be included. When we remove SibSp and Cabin we see that the mean absolute error now ranges from .17 to .27 (see the screanshot below of the exact mean absolute error of the first 10 random states.).
