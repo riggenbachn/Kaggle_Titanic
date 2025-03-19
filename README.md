@@ -48,14 +48,16 @@ with a p-value of 0.05 we see that all the columns except SibSp and Cabin are co
 ## Testing for optimal learning parameters
 
 Now that we have specified our features we will be building our model on, we will want to specify the number of leaf nodes our model can have so that we do not overtrain or undertrain our model. In order to do this we took the first 10 random states, and for each one we split the training data in half using this random seed and for each of $\{5,50,500,5000\}$ we initialized a decision tree regressor using this random seed with the indicated maximum number of  leaves. We then calculated the mean absolute error which resulted in the following:
-![image](https://github.com/user-attachments/assets/30ca220a-fcd0-432f-95ad-05f22ed84467)
-![image](https://github.com/user-attachments/assets/7f7487a7-5be4-425b-b00e-8aea07b679a6)
+![image](https://github.com/user-attachments/assets/c6bc7fa8-f851-4348-ac35-6e4c9005af48)
+![image](https://github.com/user-attachments/assets/62e932ad-ef8e-4a54-8110-1a5bb4c648e9)
+
 
 From this we see that the maximum number of leaves we should have for this model is 50. 
 ## Results
 
-Using 50 as the maximum number of nodes, a feature list of ['Pclass','Age','Parch', 'Fare','Embarked','Sex'], and no random seed specified we generated from test.csv the file titanic_submission.csv. After uploading this to Kaggle we found that we had a 74% accuracy rate:
-![image](https://github.com/user-attachments/assets/793861b9-c4ec-4670-bb2b-571435151210)
+Using 50 as the maximum number of nodes, a feature list of ['Pclass','Age','Parch', 'Fare','Embarked','Sex'], and no random seed specified we generated from test.csv the file titanic_submission.csv. After uploading this to Kaggle we found that we had a 76.5% accuracy rate:
+![image](https://github.com/user-attachments/assets/72a1da8d-8c87-4ae5-a411-3fd893af647a)
+
 
 
 ## Future improvements
